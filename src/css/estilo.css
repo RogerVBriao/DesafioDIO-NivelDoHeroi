@@ -1,0 +1,126 @@
+body{
+    background-color: #808080;
+}
+
+header{
+    background-color: #000000;
+    color: #ffd700;
+    border-bottom: #ffd700 solid 5px;
+
+}
+h1{
+    margin-left: 5rem;
+    padding: 1rem;
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+}
+input{
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 15rem;
+    height: 2rem;
+}
+
+button{
+    position: relative;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd700; /* Dourado */
+    background: linear-gradient(145deg, #8b4513, #5a2d0c); /* Tons marrons com leve gradiente */
+    border: 3px solid #ffd700; /* Borda dourada */
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efeito de relevo no texto */
+    box-shadow: 
+        inset 0 0 10px #5a2d0c, /* Sombra interna */
+        0 4px 8px rgba(0, 0, 0, 0.6); /* Sombra externa */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background: linear-gradient(145deg, #5a2d0c, #8b4513); /* Inverte gradiente */
+    transform: scale(1.05); /* Leve aumento */
+    box-shadow: 
+        inset 0 0 15px #ffd700, /* Realce interno dourado */
+        0 6px 12px rgba(0, 0, 0, 0.8); /* Sombra externa mais forte */
+}
+button:active{
+    transform: scale(0.95); /* Reduz ao clicar */
+    box-shadow: 
+        inset 0 0 20px #ffd700, /* Destaque interno mais intenso */
+        0 3px 6px rgba(0, 0, 0, 0.5); /* Sombra reduzida */
+}
+
+main, #heroi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    margin: 5rem 2rem;
+}
+aside div label, aside div input{
+    display: block;
+    margin: 5px 1rem;
+}
+aside div button{
+    margin: 1rem 1rem;
+}
+
+section{
+    border: black solid 5px;
+    margin: 5rem 2rem;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    height: 500px;
+}
+
+
+
+.infoHeroi{
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+
+.infoHeroi span{
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    color: #c0bd00;
+    margin: 0 auto;
+}
+
+.blocoHeroi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imgHeroi{
+    position:absolute;
+    padding: auto 100px;
+    width: 500px;
+    height: 500px;
+}
+@keyframes girar {
+    0% {
+        transform: rotate(0deg); /* Começa sem rotação */
+    }
+    100% {
+        transform: rotate(360deg); /* Gira 360 graus */
+    }
+}
+.fundoHeroi{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: girar 20s linear infinite;
+    
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    
+    <link rel="icon" href="src/images/">
+
+    <title>Nìvel do Herói - Desafio DIO</title>
+</head>
+<body>
+    <header>
+        <h1>Nível do Herói</h1>
+    </header>
+    <main>
+        <aside>
+            <div>
+                <form >
+                    <label for="nome"><h2>Nome do Herói:</h2></label>
+                    <input name="nome" id="nome" type="text" required placeholder="Digite o nome do herói">
+                    <label for="nivel"><h2>Nível do Herói:</h2></label>
+                    <input name="nivel" id="nivel" type="number" min="1" required placeholder="Digite o nível do herói">
+                    <button type="button"  id="btn" onclick="mostrarInfoHeroi(document.getElementById('nome').value, document.getElementById('nivel').value)">Pronto para a Aventura!</button>
+                </form>
+            </div>
+        </aside>
+        <section>
+            <div id="heroi">
+                <div class="blocoHeroi">
+                    <div class="fundoHeroi" id="fundoHeroi"></div>
+                    <img id="imgHeroi" src="src/images/pngegg.png" alt="Imagem do herói">
+                </div>
+                <div class="infoHeroi">
+                    <h2>Nome: <span id="nomeHeroi"></span></h2>
+                    <h2>Exp: <span id="nivelHeroi"></span></h2>
+                    <h2>Categoria: <span id="categoriaHeroi"></span></h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/scripts/engine.js"></script>
+</body>
+</html>
